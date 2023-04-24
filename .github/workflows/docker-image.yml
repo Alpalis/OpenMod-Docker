@@ -23,4 +23,4 @@ jobs:
     - name: Build the docker image
       run: docker build . --file Dockerfile --tag openmod-alpalis:$(date +%s)
     - name: Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}/openmod-alpalis
+      run: docker push ${{secrets.DOCKER_USER}}/openmod-alpalis:latest
